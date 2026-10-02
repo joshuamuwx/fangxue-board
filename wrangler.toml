@@ -1,0 +1,11 @@
+name = "fangxue-board"
+main = "worker.js"
+compatibility_date = "2026-09-30"
+
+# 绑定 KV：在 Cloudflare 建好 namespace 后，把 id 填到下面
+[[kv_namespaces]]
+binding = "KV"
+id = "请填入KV命名空间ID"
+
+# 管理密码不要写在这里！去 Dashboard → Workers → Settings → Variables
+# 添加 Secret：ADMIN_PIN = 6位数字
